@@ -1,0 +1,28 @@
+.question {
+    margin-bottom: 7px;
+}
+
+/* liens dans les paragraphes */
+.txt_lien {
+    text-decoration: none;
+    color: white;
+}
+
+.txt_lien:hover {color: aqua;}
+
+/* zone d'une question avec sa réponse */
+.block_question_reponse {
+    background-color: #303436;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .block_question_reponse {
+        background-color: #2B2B2B;
+        box-shadow: none;
+        padding: 5%;
+    }
+}

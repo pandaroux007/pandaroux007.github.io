@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+    <head>
+        <!-- paramètre html -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Télécharger GoTime!</title>
+        <!-- fichier de style css -->
+        <link rel="stylesheet" type="text/css" href="styles/style_contenu_page.css">
+        <link rel="stylesheet" type="text/css" href="styles/style_section_os_compatibles.css">
+        <link rel="stylesheet" type="text/css" href="styles/style_barre_nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/style_haut_et_bas_page.css">
+        <link rel="stylesheet" type="text/css" href="styles/style_mobile.css">
+        <!-- favicon -->
+        <link rel="shortcut icon" type="image/png" href="icons/icon.png">
+    </head>
+    <body>
+        <!--en-tête de page-->
+        <header id="haut_de_page" class="header" role="banner">
+            <div class="logo" role="img">
+                <img src="icons/icon.png" onmousedown="return false" onmousemove="return false" alt="Logo de GoTime" title="Logo de GoTime">
+            </div>
+
+            <div class="titres">
+                <h1 class="titre_site" id="titre_site" aria-label="Bienvenue sur le site de l'application GoTime!" title="GoTime">GoTime</h1>
+                <h2 class="sous_titre_site" aria-labelledby="titre_site" aria-label="Une application simple de minuteur." title="Une application simple de minuteur hors ligne"><i>Une application simple de minuteur hors ligne</i></h2>
+            </div>
+            <div id="icone_menu_hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <!--barre de navigation et de recherche-->
+        <section id="menu_nav_pages_et_recherche" role="navigation">
+            <!--onglets avec liens vers téléchargement et doc-->
+            <nav class="onglets">
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="#telechargement"><li>Télécharger</li></a>
+                <a href="#documentation"><li>Documentation</li></a>
+                <a href="faq.html"><li>F.A.Q</li></a>
+            </nav>
+            <!--Barre de recherche et son icone-->
+            <div class="conteneur_recherche" title="Entrez un terme ici">
+                <input type="text" class="barre_de_recherche" placeholder="Rechercher..." autocomplete="on" autofocus>
+                <div class="icone-loupe-recherche">
+                    <img src="icons/recherche.svg" onmousedown="return false" onmousemove="return false" alt="Recherche" title="Rechercher" width="20px" height="20px">
+                </div>
+            </div>
+        </section>
+        <!--Contenu de la page (article, etc...)-->
+        <main class="partie_centrale" role="main">
+            <!--section présentation-->
+            <h2 class="titres_sections_partie_centrale" id="id_titre_presentation">GoTime, c'est quoi ?</h2>
+            <section class="sections_partie_centrale section_presentation" aria-labelledby="id_titre_presentation">
+                <img src="icons/icon.png" class="img_logo_gotime" onmousedown="return false" onmousemove="return false" alt="Logo de GoTime" title="Logo de GoTime">
+                <article>
+                    GoTime est une application <b>simple</b> et <b>multi-platforme</b> de <b>minuteur/timer</b>.
+                    <br>
+                    <sup><i>(testée positivement sur Linux et Windows, 
+                    possibilité de tourner sur MacOS-X mais potentielles incompatibilités)</i></sup>
+                    <br><br>
+                    Elle a été conçue à la base pour aider les professeurs d'un collège à être moins dépendants
+                    d'Internet, souvent en panne dans l'établissement.
+                    <div>
+                        <a href="faq.html" class="bouton_voir_plus" title="Voir plus">
+                            <p><b>Voir plus</b></p>
+                            <img id="icone_voir_plus" src="icons/arrow_circle.svg" onmousedown="return false" onmousemove="return false" alt="Voir plus">
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <!--section téléchargement-->
+            <h2 class="titres_sections_partie_centrale" id="id_titre_telechargement">Téléchargement</h2>
+            <section id="telechargement" class="sections_partie_centrale" aria-labelledby="id_titre_telechargement">
+                <a href="https://github.com/pandaroux007/GoTime/releases/latest" class="bouton" id="bouton_telechargement">Télécharger GoTime <span class="version_app"></span></a>
+                <div class="os_compatibles">
+                    <h3>Systèmes compatibles</h3>
+                    <div class="icones_os">
+                        <div class="icone_os" title="Linux">
+                            <img src="icons/linux.svg" onmousedown="return false" onmousemove="return false" alt="Linux">
+                            <span>Linux</span>
+                        </div>
+                        <div class="icone_os" title="Windows">
+                            <img src="icons/windows.svg" onmousedown="return false" onmousemove="return false" alt="Windows">
+                            <span>Windows</span>
+                        </div>
+                        <div class="icone_os" title="MacOS-X">
+                            <img src="icons/macos.svg" onmousedown="return false" onmousemove="return false" alt="MacOS-X">
+                            <span>MacOS-X</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section documentation-->
+            <h2 class="titres_sections_partie_centrale" id="id_titre_documentation">Documentation</h2>
+            <section id="documentation" class="sections_partie_centrale" aria-labelledby="id_titre_documentation">
+                <p>La documentation de l'application n'est disponible actuellement que sur le wiki du projet sur GitHub, ce qui peut poser des problèmes d'accessibilité.<br><br>Nous travaillons à déplacer cette documentation sur le site. Excusez nous pour la gêne occasionnée...</p>
+                <br>
+                <a href="https://github.com/pandaroux007/GoTime/wiki" target="_blank" class="bouton">Accéder au Wiki</a>
+            </section>
+        </main>
+        <!--bas de page-->
+        <footer class="bas_de_page" role="contentinfo">
+            <div class="bas_de_page_gauche">
+                <p>&copy; 2024 GoTime</p>
+            </div>
+            <div class="bas_de_page_centre">
+                <a href="../index.html">À Propos</a>
+            </div>
+            <!--lien sociaux-->
+            <div class="bas_de_page_droite">
+                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="icons/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
+                <a href="https://github.com/pandaroux007" target="_blank"><img src="icons/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
+                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="icons/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
+            </div>
+        </footer>
+        <!--charger le javascript -->
+        <script src="scripts/detectMobileUse.js"></script>
+        <script src="scripts/loadInfoApp.js"></script>
+        <script src="scripts/eventClickBurgerMenu.js"></script>
+        <script>0</script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+/* ------------------------ En-tête du site */
+.header {
+    background: linear-gradient(to bottom right, #000000, #00aeff);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Espace intérieur de l'en-tête */
+    color: white;
+}
+
+/* Titre du site */
+.titres {
+    margin-left: 20px; /* Espacement entre les titres et le logo */
+    margin-bottom: 12px; /* Ajoute un espace entre les titres et le bord de la page */
+    flex-grow: 1; /* Permet à ce conteneur de prendre autant d'espace que possible */
+    text-align: left;
+}
+
+.titre_site {
+    font-size: 36px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.sous_titre_site {
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.logo {
+    flex-shrink: 0; /* empêche le logo de rétrécir pour s'adapter à l'écran */
+    margin-left: 5px; /* espacement entre le logo et les titres */
+}
+
+.logo img {
+    max-width: 100%; /* largeur maximale de l'image : 100% de la largeur du conteneur */
+    height: 80px;
+    width: 80px;
+}
+
+/* ------------------------ responsive ------------------------ */
+@media screen and (max-width: 768px) {
+    /* annule la différence créée par la disparition du logo de l'appli */
+    .header {height: 84px;}
+
+    /* cache l'image quand l'écran est trop petit */
+    .logo {display: none;}
+
+    /* ajuste l'espacement quand l'image est cachée */
+    .titres {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    /* On ajuste la position des éléments du footer en fonction de la taille de l'écran */
+    .bas_de_page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bas_de_page_gauche,
+    .bas_de_page_centre,
+    .bas_de_page_droite {
+        padding: 7px 0;
+    }
+
+    .bas_de_page_droite a {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .sous_titre_site {
+        display: none;
+    }
+
+    .titre_site {
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .logo {
+        display: block;
+        text-align: left;
+    }
+}
+
+/* ------------------------ style du bas de la page */
+.bas_de_page {
+    background-color: #2B2B2B;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bas_de_page_gauche,
+.bas_de_page_centre,
+.bas_de_page_droite {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.bas_de_page_gauche p {margin: 0;}
+
+.bas_de_page_centre a {
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.bas_de_page_centre a:visited {color: white;}
+
+.bas_de_page_droite a {margin-left: 10px;}
+.bas_de_page_droite img {width: 30px; height: 30px;}
+
+
+@media screen and (max-width: 768px) {
+    .bas_de_page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bas_de_page_gauche,
+    .bas_de_page_centre,
+    .bas_de_page_droite {
+        padding: 7px 0;
+    }
+
+    .bas_de_page_droite a {
+        margin: 5px;
+    }
+}

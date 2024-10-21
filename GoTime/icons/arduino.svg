@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1"
+   id="svg12"
+   sodipodi:docname="arduino.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     shape-rendering="auto"
+     showborder="false"
+     inkscape:zoom="16"
+     inkscape:cx="-4.78125"
+     inkscape:cy="19.75"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <circle
+     style="fill:#e4e4e4;stroke-width:1.06667"
+     cx="8.0036373"
+     cy="8.0036383"
+     r="7.9999838"
+     id="circle2" />
+  <path
+     style="fill:none;stroke:#00797d;stroke-width:1.06667;stroke-linecap:round;stroke-linejoin:round"
+     d="M 2.6703147,8.0036383 H 4.8036438"
+     id="path4" />
+  <path
+     style="fill:none;stroke:#009da2;stroke-width:1.06667;stroke-linecap:round;stroke-linejoin:round"
+     d="M 12.270295,6.9369737 V 9.0703029 M 11.203632,8.0036368 h 2.133328"
+     id="path6" />
+  <path
+     style="fill:none;stroke:#00797d;stroke-width:1.6"
+     d="m 15.203623,8.0036383 c 0,0 0,-2.933326 -3.199986,-2.933326 -3.1999855,0 -4.7999786,5.8666537 -7.9999644,5.8666537 -3.19998512,0 -3.19998512,-2.9333277 -3.19998512,-2.9333277 v 0 0"
+     id="path8" />
+  <path
+     style="fill:none;stroke:#009da2;stroke-width:1.6"
+     d="m 0.80365174,8.0036383 c 0,0 0,-2.933326 3.19998596,-2.933326 3.1999859,0 4.7999789,5.8666537 7.9999653,5.8666537 3.199984,0 3.199984,-2.9333277 3.199984,-2.9333277 v 0 0"
+     id="path10" />
+</svg>

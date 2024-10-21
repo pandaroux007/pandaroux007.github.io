@@ -1,0 +1,17 @@
+.affichage_si_exec_sur_mobile {text-align: center;}
+
+.affichage_si_exec_sur_mobile .img_warning {
+    width: 100px;
+    height: 100px;
+}
+
+.affichage_si_exec_sur_mobile h1 h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.affichage_si_exec_sur_mobile a {
+    font-weight: normal;
+    text-decoration: none;
+    color: aqua;
+}
