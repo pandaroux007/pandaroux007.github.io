@@ -11,11 +11,26 @@ async function majVersionEtLienTelechargement() {
             }
         });
 
-        if(reponseApi.ok) {
+        if (reponseApi.ok) {
             const donnees = await reponseApi.json();
-            if(typeof donnees === 'object') {
-                if(donnees.zipball_url) majLienTelechargementHtml(donnees.zipball_url);
+            if (donnees && typeof donnees === 'object') {
                 if(donnees.tag_name) majVersionHtml(donnees.tag_name);
+                if (donnees.tag_name) {
+                    const zipAsset = donnees.assets.find(asset => asset.name.endsWith('.zip'));
+                    if (zipAsset && zipAsset.browser_download_url) {
+                        majLienTelechargementHtml(zipAsset.browser_download_url);
+                    }
+                    else {
+                        console.warn("Fichier ZIP non trouvé dans les assets");
+                        majLienTelechargementHtml(donnees.html_url);
+                    }
+                }
+                else {
+                    console.warn("Numéro de version non trouvé");
+                }
+            }
+            else {
+                console.error("Les données reçues ne sont pas au format attendu");
             }
         }
         else {
@@ -29,8 +44,12 @@ async function majVersionEtLienTelechargement() {
 
 function majVersionHtml(version) {
     // MàJ version
-    const versionElement = document.getElementsByClassName('version_app');
-    if (versionElement) versionElement.textContent = version;
+    const versionElements = document.getElementsByClassName('version_app');
+    if (versionElements.length > 0) {
+        for (let element of versionElements) {
+            element.textContent = version;
+        }
+    }
 }
 
 function majLienTelechargementHtml(lienTelechargement) {
