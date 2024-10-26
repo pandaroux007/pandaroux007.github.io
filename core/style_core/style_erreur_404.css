@@ -4,13 +4,8 @@
     margin-top: 50px;
 }
 
-.img_warning {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
-}
-
 .paragraphe_erreur {
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }

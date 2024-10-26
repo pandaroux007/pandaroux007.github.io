@@ -1,0 +1,54 @@
+/* Boutons sur la page vers le lien de téléchargement, la doc, etc...*/
+.bouton {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #3498DB;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 0 5px #00608d;
+}
+
+.bouton:hover {
+    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    box-shadow: 0 4px #00608d;
+}
+
+.bouton:active {
+    transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    box-shadow: 0 1px #00608d;
+}
+
+/* les sections principales de la partie centrale (main) */
+.titres_sections_partie_centrale {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.sections_partie_centrale {
+    border-radius: 8px;
+    border: 2px solid #303436;
+    background-color: #2B2B2B;
+    padding: 30px; /* espace intérieur */
+    font-size: larger;
+    margin-inline: 15%;
+    min-height: 150px; /* hauteur minimale de la section */
+    box-sizing: border-box; /* inclure la bordure dans le calcul de la taille */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+/* Media query pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .sections_partie_centrale {
+        margin-inline: 5%;
+        padding: 10px;
+    }
+}

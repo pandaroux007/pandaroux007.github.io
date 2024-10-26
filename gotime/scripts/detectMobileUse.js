@@ -17,7 +17,7 @@ function verifMobile() {
         // nouveau contenu pour la version mobile
         const contenuMobile = `
         <div class="affichage_si_exec_sur_mobile">
-            <img class="img_warning" src="icons/warning.png" alt="Avertissement" title="⚠️ Plateforme non supportée! ⚠️">
+            <img class="img_warning" src="../../core/icons_core/warning.png" alt="Avertissement" title="⚠️ Plateforme non supportée! ⚠️">
             <div>
                 <h1>Plateforme non supportée!</h1>
                 <br>

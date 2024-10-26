@@ -4,54 +4,73 @@
         <!-- paramètre html -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Télécharger GoTime!</title>
+        <title>😶‍🌫️ Z'êtes perdu ?</title>
         <!-- fichier de style css -->
-        <link rel="stylesheet" type="text/css" href="GoTime/styles/style_contenu_page.css">
-        <link rel="stylesheet" type="text/css" href="GoTime/styles/style_haut_et_bas_page.css">
-        <link rel="stylesheet" type="text/css" href="GoTime/styles/styles_erreur_404.css">
-        <!-- favicon -->
-        <link rel="shortcut icon" type="image/png" href="GoTime/icons/icon.png">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_page.css">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_barre_nav.css">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_widgets.css">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_erreur_404.css">
     </head>
     <body>
         <!--en-tête de page-->
         <header id="haut_de_page" class="header" role="banner">
-            <div class="logo" role="img">
-                <img src="GoTime/icons/icon.png" onmousedown="return false" onmousemove="return false" alt="Logo de GoTime" title="Logo de GoTime">
-            </div>
-
             <div class="titres">
-                <h1 class="titre_site" id="titre_site" aria-label="Bienvenue sur le site de l'application GoTime!" title="GoTime">GoTime</h1>
-                <h2 class="sous_titre_site" aria-labelledby="titre_site" aria-label="Une application simple de minuteur." title="Une application simple de minuteur hors ligne"><i>Une application simple de minuteur hors ligne</i></h2>
+                <h1 class="titre_site" id="titre_site" title="Pandaroux007">Pandaroux007</h1>
+            </div>
+            <div id="icone_menu_hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </header>
+        <!--barre de navigation et de recherche-->
+        <section id="menu_nav_pages_et_recherche" role="navigation">
+            <!--onglets avec liens vers téléchargement et doc-->
+            <nav class="onglets">
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="index.html#presentation"><li>Présentation</li></a>
+                <a href="index.html#projets"><li>Projets</li></a>
+                <a href="index.html#application"><li>Applications</li></a>
+            </nav>
+            <!--Barre de recherche et son icone-->
+            <div class="conteneur_recherche" title="Entrez un terme ici">
+                <input type="text" class="barre_de_recherche" placeholder="Rechercher..." autocomplete="on" autofocus>
+                <div class="icone-loupe-recherche">
+                    <img src="core/icons_core/recherche.svg" onmousedown="return false" onmousemove="return false" alt="Recherche" title="Rechercher" width="20px" height="20px">
+                </div>
+            </div>
+        </section>
         <!--Contenu de la page (article, etc...)-->
         <main class="partie_centrale" role="main">
             <br><br>
             <section class="sections_partie_centrale">
-                <img class="img_warning" src="GoTime/icons/warning.png" alt="Avertissement" title="⚠️ Erreur 404! ⚠️">
+                <img class="img_warning" src="core/icons_core/404.svg" onmousedown="return false" onmousemove="return false" alt="Avertissement" title="⚠️ Erreur 404! ⚠️">
                 <div class="paragraphe_erreur">
                     <h1>ERREUR 404</h1>
-                    <p><i>Aïe, désolé, mais il semble que la page que vous recherchez n'existe pas ou plus...</i></p>
+                    <p class="paragraphe_erreur"><i>Aïe, désolé, mais il semble que la page que vous recherchez n'existe pas ou plus...</i></p>
+                    <p><i>Deux solutions s'offrent à vous. Sois vous continuez à errer dans les profondeurs de ce site<br>
+                        (curieux que vous êtes</i> 👀<i>), soit vous retournez à l'accueil pour découvrir mes projets! </i>🔥</p>
                 </div>
-                <a href="GoTime/index.html" class="bouton">Retourner à l'Accueil</a>
+                <a href="index.html" class="bouton">Retourner à l'Accueil</a>
             </section>
         </main>
         <!--bas de page-->
         <footer class="bas_de_page" role="contentinfo">
             <div class="bas_de_page_gauche">
-                <p>&copy; 2024 GoTime</p>
+                <p>&copy; 2024 Pandaroux007</p>
             </div>
             <div class="bas_de_page_centre">
-                <a href="faq.html">F.A.Q</a>
+                <a href="index.html">Accueil</a>
             </div>
             <!--lien sociaux-->
             <div class="bas_de_page_droite">
-                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="GoTime/icons/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
-                <a href="https://github.com/pandaroux007" target="_blank"><img src="GoTime/icons/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
-                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="GoTime/icons/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
+                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="core/icons_core/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
+                <a href="https://github.com/pandaroux007" target="_blank"><img src="core/icons_core/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
+                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="core/icons_core/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Forum Arduino" title="Forum Arduino"></a>
             </div>
         </footer>
         <!--charger le javascript -->
+        <script src="core/scripts_core/eventClickBurgerMenu.js"></script>
         <script>0</script>
     </body>
 </html>

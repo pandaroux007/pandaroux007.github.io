@@ -1,3 +1,29 @@
+/* Paramètres pour toute la page */
+@keyframes opac {from {opacity:0} to {opacity:1}}
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* animation */
+    animation:opac 0.8s
+}
+
+/* Pour le problème du footer voir : https://openclassrooms.com/forum/sujet/faire-un-footer-qui-reste-tout-le-temps-en-bas#message-91776182 
+et l'exemple sur jsfiddle.net : https://jsfiddle.net/n2zmp3d9/*/
+body {
+    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.partie_centrale {
+    background: #d6d6d6;
+    text-align: center;
+    flex: 1;
+	padding: 1rem;
+}
+
 /* ------------------------ En-tête du site */
 .header {
     background: linear-gradient(to bottom right, #000000, #00aeff);
@@ -21,7 +47,6 @@
     font-size: 36px;
     margin: 0;
     text-decoration: none;
-    color: white;
 }
 
 .sous_titre_site {

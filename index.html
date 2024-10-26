@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="FR-fr">
     <head>
+        <!-- paramètre html -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Présentation</title>
+        <meta name="author" content="pandaroux007"/>
+        <meta name="description" content="Site de pandaroux007, jeune développeur amateur de bidouilles et de programmation"/>
+        <meta name="keywords" content="pandaroux007, developpeur, develloppeur, devellopeur, projets, présentation, python, c++, arduino"/>
+        <title>🚀 Hey, salut! 👋 Moi, c'est pandaroux007!</title>
+        <!-- fichier de style css -->
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_page.css">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_barre_nav.css">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_widgets.css">
     </head>
     <body>
-        <h1 style="text-align: center;">Présentation en cours d'écriture...</h1>
+        <!--en-tête de page-->
+        <header id="haut_de_page" class="header" role="banner">
+            <div class="titres">
+                <h1 class="titre_site" id="titre_site" title="Pandaroux007">Pandaroux007</h1>
+            </div>
+            <div id="icone_menu_hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <!--barre de navigation et de recherche-->
+        <section id="menu_nav_pages_et_recherche" role="navigation">
+            <!--onglets avec liens vers téléchargement et doc-->
+            <nav class="onglets">
+                <a href="index.html"><li>Accueil</li></a>
+                <a href="#presentation"><li>Présentation</li></a>
+                <a href="#projets"><li>Projets</li></a>
+                <a href="#application"><li>Applications</li></a>
+            </nav>
+            <!--Barre de recherche et son icone-->
+            <div class="conteneur_recherche" title="Entrez un terme ici">
+                <input type="text" class="barre_de_recherche" placeholder="Rechercher..." autocomplete="on" autofocus>
+                <div class="icone-loupe-recherche">
+                    <img src="core/icons_core/recherche.svg" onmousedown="return false" onmousemove="return false" alt="Recherche" title="Rechercher" width="20px" height="20px">
+                </div>
+            </div>
+        </section>
+        <!--Contenu de la page (article, etc...)-->
+        <main class="partie_centrale" role="main">
+            <!--section présentation-->
+            <h2 class="titres_sections_partie_centrale" id="id_titre_presentation">Qui suis-je ?</h2>
+            <section class="sections_partie_centrale section_presentation" aria-labelledby="id_titre_presentation">
+                <img src="core/icons_core/pandaroux007.png" class="img_logo_gotime" onmousedown="return false" onmousemove="return false" alt="Pandaroux007" title="Mon avatar">
+                <article>
+                    Salut! 👋<br>
+                    Moi, c'est Pandaroux007. Mon vrai nom, c'est Rémi, je suis un jeune développeur
+                    amateur passionné par l'informatique, l'électronique, et la science.<br>
+                </article>
+            </section>
+            <!--section présentation-->
+            <h2 class="titres_sections_partie_centrale" id=""> ?</h2>
+            <section class="sections_partie_centrale" aria-labelledby="">
+                
+            </section>
+        </main>
+        <!--bas de page-->
+        <footer class="bas_de_page" role="contentinfo">
+            <div class="bas_de_page_gauche">
+                <p>&copy; 2024 Pandaroux007</p>
+            </div>
+            <div class="bas_de_page_centre">
+                <a href="https://www.github.com/pandaroux007/pandaroux007.github.io" target="_blank">Voir sur GitHub</a>
+            </div>
+            <!--lien sociaux-->
+            <div class="bas_de_page_droite">
+                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="core/icons_core/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
+                <a href="https://github.com/pandaroux007" target="_blank"><img src="core/icons_core/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
+                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="core/icons_core/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
+            </div>
+        </footer>
+        <!--charger le javascript -->
+        <script src="core/scripts_core/eventClickBurgerMenu.js"></script>
+        <script>0</script>
     </body>
 </html>
