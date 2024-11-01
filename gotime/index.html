@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="pandaroux007"/>
         <meta name="description" content="Téléchargez GoTime, une application simple de minuteur/timer pour le collège et ses professeurs"/>
-        <meta name="keywords" content="pandaroux007, gotime, timer, minuteur, collège, application"/>
+        <meta name="keywords" content="pandaroux007, gotime, timer, minuteur, collège, application, accueil"/>
         <title>Télécharger GoTime!</title>
         <!-- fichier de style css -->
         <link rel="stylesheet" type="text/css" href="styles/style_contenu_page.css">
-        <link rel="stylesheet" type="text/css" href="../style_core/style_barre_nav.css">
-        <link rel="stylesheet" type="text/css" href="../style_core/style_page.css">
         <link rel="stylesheet" type="text/css" href="styles/style_mobile.css">
+        <link rel="stylesheet" type="text/css" href="../core/style_core/style_page.css">
+        <link rel="stylesheet" type="text/css" href="../core/style_core/style_barre_nav.css">
+        <link rel="stylesheet" type="text/css" href="../core/style_core/style_widgets.css">
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="icons/icon.png">
     </head>
@@ -54,20 +55,18 @@
         <main class="partie_centrale" role="main">
             <!--section présentation-->
             <h2 class="titres_sections_partie_centrale" id="id_titre_presentation">GoTime, c'est quoi ?</h2>
-            <section class="sections_partie_centrale section_presentation" aria-labelledby="id_titre_presentation">
-                <img src="icons/icon.png" class="img_logo_gotime" onmousedown="return false" onmousemove="return false" alt="Logo de GoTime" title="Logo de GoTime">
+            <section class="sections_partie_centrale" id="section_presentation" aria-labelledby="id_titre_presentation">
+                <img src="icons/icon.png" id="img_logo_gotime" onmousedown="return false" onmousemove="return false" alt="Logo de GoTime" title="Logo de GoTime">
                 <article>
                     GoTime est une application <b>simple</b> et <b>multi-platforme</b> de <b>minuteur/timer</b>.
-                    <br>
-                    <sup><i>(testée positivement sur Linux et Windows, 
-                    possibilité de tourner sur MacOS-X mais potentielles incompatibilités)</i></sup>
+                    <sup><i>(testée positivement sur Linux et Windows, non testée sur MacOS-X)</i></sup>
                     <br><br>
                     Elle a été conçue à la base pour aider les professeurs d'un collège à être moins dépendants
                     d'Internet, souvent en panne dans l'établissement.
                     <div>
                         <a href="faq.html" class="bouton_voir_plus" title="Voir plus">
                             <p><b>Voir plus</b></p>
-                            <img id="icone_voir_plus" src="icons/arrow_circle.svg" onmousedown="return false" onmousemove="return false" alt="Voir plus">
+                            <img src="icons/arrow_circle.svg" onmousedown="return false" onmousemove="return false" alt="Voir plus">
                         </a>
                     </div>
                 </article>
@@ -76,18 +75,18 @@
             <h2 class="titres_sections_partie_centrale" id="id_titre_telechargement">Téléchargement</h2>
             <section id="telechargement" class="sections_partie_centrale" aria-labelledby="id_titre_telechargement">
                 <a href="https://github.com/pandaroux007/GoTime/releases/latest" class="bouton" id="bouton_telechargement">Télécharger GoTime <span class="version_app"></span></a>
-                <div class="os_compatibles">
+                <div id="os_compatibles">
                     <h3>Systèmes compatibles</h3>
-                    <div class="icones_os">
-                        <div class="icone_os" title="Linux">
+                    <div id="icones_os">
+                        <div id="icone_os" title="Linux">
                             <img src="icons/linux.svg" onmousedown="return false" onmousemove="return false" alt="Linux">
                             <span>Linux</span>
                         </div>
-                        <div class="icone_os" title="Windows">
+                        <div id="icone_os" title="Windows">
                             <img src="icons/windows.svg" onmousedown="return false" onmousemove="return false" alt="Windows">
                             <span>Windows</span>
                         </div>
-                        <div class="icone_os" title="MacOS-X">
+                        <div id="icone_os" title="MacOS-X">
                             <img src="icons/macos.svg" onmousedown="return false" onmousemove="return false" alt="MacOS-X">
                             <span>MacOS-X</span>
                         </div>
@@ -112,15 +111,15 @@
             </div>
             <!--lien sociaux-->
             <div class="bas_de_page_droite">
-                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="icons_core/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
-                <a href="https://github.com/pandaroux007" target="_blank"><img src="icons_core/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
-                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="icons_core/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
+                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="../core/icons_core/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
+                <a href="https://github.com/pandaroux007" target="_blank"><img src="../core/icons_core/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
+                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="../core/icons_core/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
             </div>
         </footer>
         <!--charger le javascript -->
         <script src="scripts/detectMobileUse.js"></script>
         <script src="scripts/loadInfoApp.js"></script>
-        <script src="scripts/eventClickBurgerMenu.js"></script>
+        <script src="../core/scripts_core/eventClickBurgerMenu.js"></script>
         <script>0</script>
     </body>
 </html>

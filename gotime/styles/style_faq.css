@@ -2,14 +2,6 @@
     margin-bottom: 7px;
 }
 
-/* liens dans les paragraphes */
-.txt_lien {
-    text-decoration: none;
-    color: white;
-}
-
-.txt_lien:hover {color: aqua;}
-
 /* zone d'une question avec sa réponse */
 .block_question_reponse {
     background-color: #303436;

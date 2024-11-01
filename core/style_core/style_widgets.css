@@ -28,14 +28,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 30px;
-    color: white;
+    color: var(--couleur-sombre);
     font-weight: bold;
 }
 
 .sections_partie_centrale {
     border-radius: 8px;
     border: 2px solid #303436;
-    background-color: #2B2B2B;
+    background-color: var(--couleur-sombre);
     padding: 30px; /* espace intérieur */
     font-size: larger;
     margin-inline: 15%;
@@ -45,10 +45,39 @@
     color: white;
 }
 
-/* Media query pour les petits écrans */
 @media screen and (max-width: 768px) {
     .sections_partie_centrale {
         margin-inline: 5%;
         padding: 10px;
     }
 }
+
+/* bouton voir plus */
+.bouton_voir_plus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    float: right;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.bouton_voir_plus:hover {color: aqua;}
+
+.bouton_voir_plus img {
+    height: 20px;
+    width: 20px;
+    fill: white;
+    margin-left: 5px;
+}
+
+/* liens dans les paragraphes */
+.txt_lien {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.txt_lien:hover {color: aqua;}

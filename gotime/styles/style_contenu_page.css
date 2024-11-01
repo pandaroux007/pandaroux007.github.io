@@ -1,3 +1,5 @@
+@import url("../../core/style_core/style_couleur.css");
+
 .partie_centrale {
     background: linear-gradient(to bottom right, #000000, 70%, #00aeff);
     text-align: center;
@@ -6,20 +8,20 @@
 }
 
 /* style section presentation */
-.section_presentation {
+#section_presentation {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-.img_logo_gotime {
+#img_logo_gotime {
     flex-shrink: 0;
     margin-left: 20px;
     height: 140px;
     width: 140px;
 }
 
-.section_presentation article {
+#section_presentation article {
     background-color: #303436;
     border-radius: 5px;
     padding: 20px;
@@ -27,40 +29,20 @@
     margin: 10px;
 }
 
-.bouton_voir_plus {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    float: right;
-    cursor: pointer;
-    margin-top: 30px;
-}
-
-.bouton_voir_plus:hover {color: aqua;}
-
-#icone_voir_plus {
-    height: 20px;
-    width: 20px;
-    fill: white;
-    margin-left: 5px;
-}
-
 @media screen and (max-width: 768px) {
-    .img_logo_gotime {
+    #img_logo_gotime {
         display: none;
     }
 
-    .section_presentation article {
-        background-color: #2B2B2B;
+    #section_presentation article {
+        background-color: var(--couleur-sombre);
         box-shadow: none;
         padding: 5%;
     }
 }
 
 /* style section os compatibles */
-.os_compatibles {
+#os_compatibles {
     background-color: #f5f5f5;
     border-radius: 5px;
     padding-top: 5px;
@@ -69,25 +51,25 @@
     max-width: 400px;
     margin: 20px auto;
 }
-  
-.os_compatibles h3 {
-    color: #2B2B2B;
+
+#os_compatibles h3 {
+    color: var(--couleur-sombre);
     text-align: center;
     margin-bottom: 15px;
 }
-  
-.icones_os {
+
+#icones_os {
     display: flex;
     justify-content: space-around;
 }
-  
-.icone_os {
+
+#icone_os {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
-.icone_os img {
+
+#icone_os img {
     width: 60px;
     height: 60px;
     background-color: #3498DB;
@@ -95,9 +77,9 @@
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-  
-.icone_os span {
-    color: #2B2B2B;
+
+#icone_os span {
+    color: var(--couleur-sombre);
     margin-top: 8px;
     font-size: 14px;
 }

@@ -4,12 +4,15 @@
         <!-- paramètre html -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="pandaroux007"/>
+        <meta name="description" content="Téléchargez GoTime, une application simple de minuteur/timer pour le collège et ses professeurs"/>
+        <meta name="keywords" content="pandaroux007, gotime, timer, minuteur, collège, application, faq"/>
         <title>Télécharger GoTime!</title>
         <!-- fichier de style css -->
-        <link rel="stylesheet" type="text/css" href="styles/style_contenu_page.css">
-        <link rel="stylesheet" type="text/css" href="styles/style_haut_et_bas_page.css">
-        <link rel="stylesheet" type="text/css" href="styles/style_barre_nav.css">
         <link rel="stylesheet" type="text/css" href="styles/style_faq.css">
+        <link rel="stylesheet" type="text/css" href="../core/style_core/style_page.css">
+        <link rel="stylesheet" type="text/css" href="../core/style_core/style_barre_nav.css">
+        <link rel="stylesheet" type="text/css" href="../core/style_core/style_widgets.css">
         <!-- favicon -->
         <link rel="shortcut icon" type="image/png" href="icons/icon.png">
     </head>
@@ -24,7 +27,7 @@
                 <h1 class="titre_site" id="titre_site" aria-label="Bienvenue sur le site de l'application GoTime!" title="GoTime">GoTime</h1>
                 <h2 class="sous_titre_site" aria-labelledby="titre_site" aria-label="Une application simple de minuteur." title="Une application simple de minuteur hors ligne"><i>Une application simple de minuteur hors ligne</i></h2>
             </div>
-            <div id="icone_menu_hamburger" aria-label="Menu">
+            <div id="icone_menu_hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,15 +45,30 @@
             <div class="conteneur_recherche" title="Entrez un terme ici">
                 <input type="text" class="barre_de_recherche" placeholder="Rechercher..." autocomplete="on" autofocus>
                 <div class="icone-loupe-recherche">
-                    <img src="icons/recherche.svg" onmousedown="return false" onmousemove="return false" alt="Recherche" title="Rechercher" width="20px" height="20px">
+                    <img src="../core/icons_core/recherche.svg" onmousedown="return false" onmousemove="return false" alt="Recherche" title="Rechercher" width="20px" height="20px">
                 </div>
             </div>
         </section>
         <!--Contenu de la page (article, etc...)-->
         <main class="partie_centrale" role="main">
             <!--section FAQ-->
+            <h2 class="titres_sections_partie_centrale" id="id_titre_presentation">Qu'est ce que GoTime ?</h2>
+            <section class="sections_partie_centrale" aria-labelledby="id_titre_presentation">
+                <p>
+                    GoTime est une application simple de minuteur/timer, destinée aux professeurs de collège à la base.
+                    Sa particularité : disposer d'un mode "déportation" qui permet de placer le décompte dans une nouvelle
+                    fenêtre dédiée, redimensionnable, lisible et surtout toujours en premier plan pour pouvoir travailler
+                    à côté.<br>
+                    <br>
+                    La version v1, créée à partir du 9 février 2024 comme indiqué dans <a class="txt_lien" href="https://github.com/pandaroux007/GoTime?tab=readme-ov-file#projet">le README du projet</a>, prend en compte
+                    des fonctionnalités de base, c'est à dire le minuteur, une seule sonnerie, quelques paramètres simples,
+                    un thème sombre ou clair, et la déportation du temps dans une nouvelle fenêtre. Pour découvrir les fonctionnalités attendues de la V2 et suivante, lisez les 
+                    <a class="txt_lien" href="https://github.com/pandaroux007/GoTime?tab=readme-ov-file#am%C3%A9liorations-ajouts-et-choses-%C3%A0-terminer">étapes de la ToDo liste</a>.
+                </p>
+            </section>
+            <!--section FAQ-->
             <h2 class="titres_sections_partie_centrale" id="id_titre_faq">F.A.Q</h2>
-            <section id="faq" class="sections_partie_centrale" aria-labelledby="id_titre_faq">
+            <section class="sections_partie_centrale" aria-labelledby="id_titre_faq">
                 <div class="questions_reponses">
                     <section class="block_question_reponse">
                         <h3 id="id_q_prix_app" class="question">GoTime est-elle gratuite 💰️ ?</h3>
@@ -81,7 +99,7 @@
                         <p aria-labelledby="id_q_freq_maj">
                             Nous mettons à jour l'application lors de mise à jour de sécurité ou de correctifs de bugs par exemple lorsque c'est nécessaire,
                             cependant les mises à jours comportants uniquement de nouvelles fonctionnalités ou des refontes de l'interface sont moins fréquentes,
-                            en raison du fait que les développeurs (bénévoles nous le rappelons) de l'appli travaillent sur d'autres projets en parallèle.
+                            en raison du fait que les développeurs de l'appli (bénévoles nous le rappelons) travaillent sur d'autres projets en parallèle.
                         </p>
                     </section>
                     <br>
@@ -110,13 +128,13 @@
             </div>
             <!--lien sociaux-->
             <div class="bas_de_page_droite">
-                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="icons_core/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
-                <a href="https://github.com/pandaroux007" target="_blank"><img src="icons_core/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
-                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="icons_core/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
+                <a href="https://www.youtube.com/@pandaroux007" target="_blank"><img src="../core/icons_core/youtube.png" onmousedown="return false" onmousemove="return false" alt="YouTube" title="YouTube"></a>
+                <a href="https://github.com/pandaroux007" target="_blank"><img src="../core/icons_core/github.png" onmousedown="return false" onmousemove="return false" alt="GitHub" title="GitHub"></a>
+                <a href="https://forum.arduino.cc/u/pandaroux007/summary" target="_blank"><img src="../core/icons_core/arduino.svg" onmousedown="return false" onmousemove="return false" alt="Arduino Forum" title="Arduino Forum"></a>
             </div>
         </footer>
         <!--charger le javascript -->
-        <script src="scripts/eventClickBurgerMenu.js"></script>
+        <script src="../core/scripts_core/eventClickBurgerMenu.js"></script>
         <script>0</script>
     </body>
 </html>
