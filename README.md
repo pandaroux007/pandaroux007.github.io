@@ -2,7 +2,7 @@
 Ce dépôt github contient le code du site pandaroux007.github.io, sous licence MIT. Ce site est déployé *via* GitHub Pages.
 
 > [!IMPORTANT]
-> Pour l'instant la barre de recherche de fait rien. Nous travaillons pour implémenter cette fonctionnalité sur le site de manière efficace.
+> Pour l'instant la barre de recherche ne fait rien. Nous travaillons pour implémenter cette fonctionnalité sur le site de manière efficace.
 
 # Arborescence du site
 ```
