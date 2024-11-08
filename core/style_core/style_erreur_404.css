@@ -1,11 +1,13 @@
 /* Page d'erreur 404 not found personnalisée */
-.section_erreur_404 {
-    text-align: center;
-    margin-top: 50px;
-}
-
 .paragraphe_erreur {
-    color: white;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 790px) {
+    .img_warning {
+        max-width: 100%; /* largeur maximale de l'image : 100% de la largeur du conteneur */
+        width: 80%;
+        height: 80%;
+    }
 }
