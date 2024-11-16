@@ -1,11 +1,8 @@
-@import url("style_couleur.css");
-
 /* Paramètres pour toute la page */
 @keyframes opac {from {opacity:0} to {opacity:1}}
 * {
     scroll-behavior: smooth;
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     /* animation */
     animation:opac 0.8s
@@ -20,7 +17,7 @@ body {
 }
 
 .partie_centrale {
-    background: var(--couleur-background-partie-centrale);
+    background: #D6D6D6;
     text-align: center;
     flex: 1;
 	padding: 1rem;
@@ -37,16 +34,22 @@ body {
     color: white;
 }
 
-/* Titre du site */
-.titres {
-    margin-left: 20px; /* Espacement entre les titres et le logo */
-    margin-bottom: 12px; /* Ajoute un espace entre les titres et le bord de la page */
+/* Titre(s) du site */
+.titres { /* quand il y a un titre et un sous-titre */
+    margin-left: 20px;
+    margin-bottom: 12px;
     flex-grow: 1; /* Permet à ce conteneur de prendre autant d'espace que possible */
     text-align: left;
 }
 
+.titre_seul { /* quand il n'y a qu'un titre */
+    margin-top: 19px;
+    margin-bottom: 19px;
+    margin-left: 5px;
+}
+
 .titre_site {
-    font-size: 36px;
+    font-size: 40px;
     margin: 0;
     text-decoration: none;
 }
@@ -57,9 +60,10 @@ body {
     font-weight: normal;
 }
 
+/* logo (pas sur toutes les pages) */
 .logo {
     flex-shrink: 0; /* empêche le logo de rétrécir pour s'adapter à l'écran */
-    margin-left: 5px; /* espacement entre le logo et les titres */
+    margin-left: 5px;
 }
 
 .logo img {
@@ -70,7 +74,7 @@ body {
 
 /* ------------------------ style du bas de la page (footer) */
 .bas_de_page {
-    background-color: var(--couleur-sombre);
+    background-color: #2B2B2B;
     color: white;
     padding: 10px 0;
     display: flex;
@@ -103,12 +107,10 @@ body {
     /* annule la différence créée par la disparition du logo de l'appli */
     .header {height: 84px;}
 
-    /* cache l'image quand l'écran est trop petit */
-    .logo {display: none;}
+    .logo {display: none;} /* cache l'image quand l'écran est trop petit */
 
     /* ajuste l'espacement quand l'image est cachée */
-    .titres {
-        margin-bottom: 0;
+    .titres, .titre_seul {
         text-align: center;
     }
 

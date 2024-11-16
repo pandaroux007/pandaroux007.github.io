@@ -7,17 +7,20 @@
         <meta name="author" content="pandaroux007"/>
         <meta name="description" content="Site de pandaroux007, jeune développeur amateur de bidouilles et de programmation"/>
         <meta name="keywords" content="pandaroux007, developpeur, develloppeur, devellopeur, projets, présentation, python, c++, arduino"/>
-        <title>🚀 Hey, salut! 👋 Moi, c'est pandaroux007!</title>
         <!-- fichier de style css -->
-        <link rel="stylesheet" type="text/css" href="core/style_core/style_page.css">
+        <link rel="stylesheet" type="text/css" href="core/style_core/style_haut_bas.css">
         <link rel="stylesheet" type="text/css" href="core/style_core/style_barre_nav.css">
         <link rel="stylesheet" type="text/css" href="core/style_core/style_widgets.css">
+        <link rel="stylesheet" type="text/css" href="styles/style_accueil.css">
+        <!-- favicon & titre -->
+        <link rel="shortcut icon" type="image/png" href="core/icons_core/logo.svg">
+        <title>Hey, salut! 👋 Moi, c'est pandaroux007! 🚀</title>
     </head>
     <body>
         <!--en-tête de page-->
         <header id="haut_de_page" class="header" role="banner">
-            <div class="titres">
-                <h1 class="titre_site" id="titre_site" title="Pandaroux007">Pandaroux007</h1>
+            <div class="titre_seul">
+                <h1 class="titre_site" title="Pandaroux007">Pandaroux007</h1>
             </div>
             <div id="icone_menu_hamburger">
                 <span></span>
@@ -46,29 +49,134 @@
         <main class="partie_centrale" role="main">
             <!--section présentation-->
             <h2 class="titres_sections_partie_centrale" id="id_titre_presentation">Qui suis-je ?</h2>
-            <section id="presentation" class="sections_partie_centrale section_presentation" aria-labelledby="id_titre_presentation">
-                <img src="core/icons_core/pandaroux007.png" class="img_logo_gotime" onmousedown="return false" onmousemove="return false" alt="Pandaroux007" title="Mon avatar">
+            <section id="presentation" class="sections_partie_centrale" aria-labelledby="id_titre_presentation">
                 <article>
-                    Salut! 👋<br>
-                    Moi, c'est Pandaroux007. Mon vrai nom, c'est Rémi, je suis un jeune développeur
-                    amateur passionné par l'informatique, l'électronique, et la science.<br>
-                    <br>
-                    J'ai découvert la programmation grâce à l'Arduino, et j'ai appris à coder en C++.
+                    <h1>Salut! 👋<br></h1>
+                    <img src="icons/pandaroux007.png" id="avatar" onmousedown="return false" onmousemove="return false" alt="Pandaroux007" title="Mon avatar (n'est-il pas mignon simone! 🤩)">
+                    <p>Moi, c'est Pandaroux007. Mon vrai nom, c'est Rémi, je suis un jeune développeur
+                    amateur passionné par l'informatique, l'électronique, et la science. J'ai découvert
+                    la programmation grâce à l'Arduino, et j'ai appris à coder en C++ sur des systèmes
+                    embarqués avec très peu de mémoire (je suis donc un fan de l'optimisation 📟️).<br></p>
+                    <p><br>Cela fait presque 4 ans que je suis tombé dans la spirale infernale des bidouilleurs 😉.
                     Maintenant, je connais également Python, un peu de HTML/CSS, et quelques (petites)
                     bases en Javascript. Il est possible que je me mette à d'autres langages avec le temps,
-                    par exemple Java pour faire du développement Android.
+                    par exemple Java pour faire du développement Android ou des packs minecraft 🎮️.<br></p>
+                    <p><br>Dans mes projets et la vie de tout les jours, j'essaye d'être au maximum attentif
+                    à l'environnement. Je commande le moins souvent possible des modules sur Internet
+                    à l'autre bout du monde 🌐, je ne fais pas faire de PCB en chine (un peu trop de
+                    plomb dedant ☣️), je n'utilise presque jamais d'IA, et pleins d'autres petits détails.<br></p>
+                    <p><br>Ils paraissent insignifiants dit comme ça, mais mis bout à bout cela réduit énormément
+                    l'empreinte carbone de mon passe-temps ♻️, dans un monde ou l'énergie est un secteur avec
+                    une très grande importance, je pense qu'on se doit de l'économiser tout comme les
+                    ressources planétaires.</p>
                 </article>
             </section>
             <!--section projets-->
             <h2 class="titres_sections_partie_centrale" id="">Mes projets</h2>
             <section id="projets" class="sections_partie_centrale" aria-labelledby="">
-                
+                <table class="tableau_projets">
+                    <caption>
+                        Je suis du genre à avoir une idée toutes les 5 minutes et une bonne tous les mois 😉
+                        J'ai cependant commencé plusieurs projets et j'en ai même fini quelques uns! 🚀
+                        En voici ci-dessous la liste (malheureusement non exhaustive), avec leur état (achevé/en cours/en pause/à faire/abandonné)
+                    </caption>
+                    <!-- première ligne contenant les en-tête de colonnes -->
+                    <thead>
+                        <tr>
+                            <th class="colonne_etat_projet">État</th>
+                            <th>Description du projet</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- projets terminés (y'en a si peu ??) -->
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">✅</span></td>
+                            <td data-label="Description">Plateau tournant Arduino avec moteur PàP et potentiomètre 🪐</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">✅</span></td>
+                            <td data-label="Description"><b>LuminoCube</b> (cube lumineux avec éclairage blanc ou multicolore Arduino) 🏮</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">✅</span></td>
+                            <td data-label="Description"><b>Dentomatique</b> (petit projet pour mieux se laver les dents en Arduino) 🦷</td>
+                        </tr>
+                        <!-- projets en cours -->
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🔄</span></td>
+                            <td data-label="Description">
+                                Implémenter la fonction de recherche, optimiser les performances,
+                                et terminer les étapes de la ToDo liste pour ce site. 🌐</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🔄</span></td>
+                            <td data-label="Description">Terminer <b>GoTime</b> V1, l'application de minuteur hors ligne pour les profs' 🕐️</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🔄</span></td>
+                            <td data-label="Description"><b>Flatsweep-light</b>, un fork de l'application de flatsweep mais
+                                avec une bibliothèque GUI cross-platform 💻️</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🔄</span></td>
+                            <td data-label="Description">Terminer <b>PandaLight</b>, un gestionnaire d'éclairage Arduino avec timeout</td>
+                        </tr>
+                        <!-- projets mis en pause (temporaire !!!) -->
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">⏸️</span></td>
+                            <td data-label="Description">Créer le code de ma voiture radiocommandée Arduino (j'ai cramé deux cartes NANO à ce petit jeu...)</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">⏸️</span></td>
+                            <td data-label="Description">Créer le code de mon prototype de mini tracker solaire Arduino (faut que je taffe sur la logique de fonctionnement)</td>
+                        </tr>
+                        <!-- projets à réaliser (certains utopiques lol) -->
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🚀</span></td>
+                            <td data-label="Description">Créer un jeu vidéo en 3D dans un langage bas niveau (C++!) sans moteur de jeu et sans IA! 🎮️</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🚀</span></td>
+                            <td data-label="Description">Créer un assistant vocal en plugin à PandaCore sur RPi style Jarvis <b>sans connection Internet</b> (<b>PandIA</b>) 🤖</td>
+                        </tr>
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">🚀</span></td>
+                            <td data-label="Description">Créer un serveur domotique (C++/python) sur raspberry avec
+                                application WEB et mobile pour le dashboard (projet <b>PandaCore</b>) 📟️</td>
+                        </tr>
+                        <!-- projets abandonnés -->
+                        <tr>
+                            <td class="colonne_etat_projet" data-label="État"><span class="icone_etat_projet">❌</span></td>
+                            <td data-label="Description">Pour l'instant <b>je n'ai abandonné aucun projet</b>, seulement mis quelqu'uns en "pause".</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
             <!--section applications-->
             <h2 class="titres_sections_partie_centrale" id="">Mes applications</h2>
-            <section id="applications" class="sections_partie_centrale" aria-labelledby="">
-                
+            <section id="applications" class="sections_partie_centrale parent_cellules_internes" aria-labelledby="">
+                <div class="cellule_interne">
+                    <h2><a href="https://pandaroux007.github.io/gotime/" class="txt_lien" target="_blank">GoTime</a></h2>
+                    <p>
+                        GoTime est une application <b>simple</b> et <b>multi-platforme</b> de <b>minuteur/timer</b>...
+                    </p>
+                    <a href="gotime/index.html" class="bouton_voir_plus" title="En savoir plus">
+                        <p><b>En savoir plus</b></p>
+                        <img src="core/icons_core/arrow_circle.svg" onmousedown="return false" onmousemove="return false" alt="➡️">
+                    </a>
+                </div>
+                <div class="cellule_interne">
+                    <h2><a href="https://pandaroux007.github.io/flatsweep-light/" class="txt_lien" target="_blank">Flatsweep-light</a></h2>
+                    <p>
+                        <b>Flatsweep-light</b> est un logiciel de <b>suppression d'élement inutile flatpak</b> sous Linux...
+                    </p>
+                    <a href="index.html" class="bouton_voir_plus" title="En savoir plus">
+                        <p><b>En savoir plus</b></p>
+                        <img src="core/icons_core/arrow_circle.svg" onmousedown="return false" onmousemove="return false" alt="➡️">
+                    </a>
+                </div>
             </section>
+            <br>
         </main>
         <!--bas de page-->
         <footer class="bas_de_page" role="contentinfo">
@@ -87,6 +195,7 @@
         </footer>
         <!--charger le javascript -->
         <script src="core/scripts_core/eventClickBurgerMenu.js"></script>
+        <script src="scripts/titleIconsStateProject.js"></script>
         <script>0</script>
     </body>
 </html>

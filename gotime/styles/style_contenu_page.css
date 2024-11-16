@@ -1,43 +1,12 @@
-@import url("../../core/style_core/style_couleur.css");
-
-.partie_centrale {
-    background: linear-gradient(to bottom right, #000000, 70%, #00aeff);
-    text-align: center;
-    flex: 1;
-	padding: 1rem;
-}
-
-/* style section presentation */
-#section_presentation {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
 #img_logo_gotime {
-    flex-shrink: 0;
     margin-left: 20px;
     height: 140px;
     width: 140px;
 }
 
-#section_presentation article {
-    background-color: #303436;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
 @media screen and (max-width: 768px) {
     #img_logo_gotime {
         display: none;
-    }
-
-    #section_presentation article {
-        background-color: var(--couleur-sombre);
-        box-shadow: none;
-        padding: 5%;
     }
 }
 
@@ -53,7 +22,7 @@
 }
 
 #os_compatibles h3 {
-    color: var(--couleur-sombre);
+    color: #2B2B2B;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -79,7 +48,7 @@
 }
 
 #icone_os span {
-    color: var(--couleur-sombre);
+    color: #2B2B2B;
     margin-top: 8px;
     font-size: 14px;
 }

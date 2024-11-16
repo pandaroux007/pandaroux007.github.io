@@ -15,6 +15,7 @@ async function majVersionEtLienTelechargement() {
             const donnees = await reponseApi.json();
             if (donnees && typeof donnees === 'object') {
                 if(donnees.tag_name) majVersionHtml(donnees.tag_name);
+                else console.warn("Numéro de version non trouvé");
                 if (donnees.tag_name) {
                     const zipAsset = donnees.assets.find(asset => asset.name.endsWith('.zip'));
                     if (zipAsset && zipAsset.browser_download_url) {
@@ -25,12 +26,9 @@ async function majVersionEtLienTelechargement() {
                         majLienTelechargementHtml(donnees.html_url);
                     }
                 }
-                else {
-                    console.warn("Numéro de version non trouvé");
-                }
             }
             else {
-                console.error("Les données reçues ne sont pas au format attendu");
+                console.exception("Les données reçues ne sont pas au format attendu");
             }
         }
         else {
@@ -38,7 +36,7 @@ async function majVersionEtLienTelechargement() {
         }
     }
     catch(erreur) {
-        console.error('Erreur lors de la récupération des informations de version: ', erreur);
+        console.exception('Erreur lors de la récupération des informations de version: ', erreur);
     }
 }
 

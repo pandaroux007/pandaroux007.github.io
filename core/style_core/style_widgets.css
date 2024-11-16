@@ -28,18 +28,17 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px 30px;
-    color: var(--couleur-sombre);
+    color: #2B2B2B;
     font-weight: bold;
 }
 
 .sections_partie_centrale {
     border-radius: 8px;
     border: 2px solid #303436;
-    background-color: var(--couleur-sombre);
-    padding: 30px; /* espace intérieur */
+    background-color: #2B2B2B;
+    padding: 30px;
     font-size: larger;
     margin-inline: 15%;
-    min-height: 150px; /* hauteur minimale de la section */
     box-sizing: border-box; /* inclure la bordure dans le calcul de la taille */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     color: white;
@@ -81,3 +80,48 @@
 }
 
 .txt_lien:hover {color: aqua;}
+
+/* style section presentation */
+.article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.article article {
+    background-color: #303436;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .article article {
+        background-color: #2B2B2B;
+        box-shadow: none;
+        padding: 5%;
+    }
+}
+
+/* plus petite zone à l'interieur des sections de la partie centrale */
+.cellule_interne {
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #303436;
+    padding: 10px 35px;
+    margin: 5px;
+}
+
+.cellule_interne h2 {margin-bottom: 5px;}
+
+.parent_cellules_internes {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .parent_cellules_internes {
+        flex-direction: column;
+    }
+}
