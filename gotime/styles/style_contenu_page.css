@@ -12,7 +12,7 @@
 
 /* style section os compatibles */
 #os_compatibles {
-    background-color: #f5f5f5;
+    background-color: #303436;
     border-radius: 5px;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -22,7 +22,7 @@
 }
 
 #os_compatibles h3 {
-    color: #2B2B2B;
+    color: #fff;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -41,14 +41,14 @@
 #icone_os img {
     width: 60px;
     height: 60px;
-    background-color: #3498DB;
+    background-color: #2771a1;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #icone_os span {
-    color: #2B2B2B;
+    color: #fff;
     margin-top: 8px;
     font-size: 14px;
 }

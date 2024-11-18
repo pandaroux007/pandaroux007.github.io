@@ -15,7 +15,7 @@
 .tableau_projets {
     width: 100%;
     border-collapse: collapse;
-    background-color: white;
+    background-color: #434343;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -29,13 +29,15 @@
 .tableau_projets td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
-    color: #2B2B2B;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    
 }
 
 .tableau_projets th {
     background-color: #4CAF50;
     color: white;
+    text-shadow: rgba(255, 255, 255, 0.25) 1px 0 10px;
 }
 
 .colonne_etat_projet {
