@@ -1,3 +1,11 @@
+<div align="center">
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-121013?logo=github&logoColor=white)](https://pandaroux007.github.io)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)
+![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)
+</div>
+
 # Site de pandaroux007
 Ce dépôt github contient le code du site pandaroux007.github.io, sous licence MIT. Ce site est déployé *via* GitHub Pages.
 
